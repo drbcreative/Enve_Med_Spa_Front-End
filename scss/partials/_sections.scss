@@ -27,6 +27,7 @@
 .hero {
   background: url('../../img/hero@2x.jpg') center / cover;
   min-height: calc(100vh - 35px);
+  background-attachment: fixed;
 
   .header {
 
@@ -169,7 +170,57 @@
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* SCULPSURE SECTION */
+/* -------------------------------------------------------------------------- */
+.sculpsure {
+  position: relative;
 
+  .sculpsure-img {
+    background: url('../../img/sculpsure-img@2x.jpg') center / cover;
+    height: 300px;
+  }
+
+  .sculpsure-content {
+
+    .containerish {
+      background: $color-white;
+      padding: 1rem;
+
+      .header-accent {
+        align-self: center;
+      }
+
+      .section-info {
+        position: relative;
+        padding-top: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+
+        .section-header-sun {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 160px;
+          width: 160;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+.botox-fillers {
+  background: url('../../img/botox-fillers-bg@2x.jpg') center / cover;
+  min-height: 400px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
