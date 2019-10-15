@@ -1,0 +1,467 @@
+/* -------------------------------------------------------------------------- */
+/* SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.containerish {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  padding: 0;
+}
+
+.form-control:focus {
+  border-color: $color-dark;
+  box-shadow: inset 0 1px 1px rgba($color-dark, 0.075),
+    0 0 8px rgba($color-dark, 0.6);
+}
+
+/* -------------------------------------------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------------------------------------------- */
+.hero {
+  background: url('../../img/hero@2x.jpg') center / cover;
+  height: calc(100vh - 35px);
+  max-height: 800px;
+
+  .header {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 1rem;
+
+      .col-left {
+        display: none;
+      }
+
+      .col-mid {
+        display: flex;
+        justify-content: center;
+
+        .header-logo {
+          width: 257.81px;
+          height: 99.83px;
+        }
+      }
+
+      .col-right {
+        .menu-toggle {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          cursor: pointer;
+
+          .menu-label {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-right: .8rem;
+            font-family: $font-primary;
+            font-size: 14px;
+            color: $color-white;
+
+          }
+
+          .menu-toggle-btn {
+            width: 40px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  /* HERO CTA */
+  .hero-cta {
+    margin-top: 1rem;
+    background: url('../img/hero-bg@2x.jpg') center / cover;
+    padding: 40px 20px 20px 20px;
+    height: 75vh;
+    max-height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .section-info {
+      max-width: 930px;
+
+      .ui-btn-group {
+        .ui-btn-white-ol:hover {
+          background: $color-white;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* FACE & EVENT SECTION */
+/* -------------------------------------------------------------------------- */
+.face-event {
+  position: relative;
+  overflow: hidden;
+
+  /* FACE */
+  .face {
+    background: $color-dark;
+    position: relative;
+
+    .containerish {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .section-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+
+        .section-info {
+          height: 500px;
+          background: $color-white;
+          grid-column: 1 / -1;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 4rem 2rem;
+
+          .top-right-angle {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 25px;
+            width: 25px;
+          }
+        }
+
+        .treatment-menu {
+          display: none;
+        }
+
+        .info-links {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+
+          .info-link {
+            background: $color-white;
+            color: $color-main;
+            font-family: $font-primary;
+            font-size: 14px;
+            font-weight: 500;
+            padding: .5rem 2rem;
+            display: block;
+            width: 100%;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              background: lighten($color-main, 20);
+              color: $color-white;
+              text-decoration: none;
+              transition: all .3s ease-in-out;
+            }
+          }
+
+          .info-link-inverted {
+            background: $color-main;
+            color: $color-white;
+            font-family: $font-primary;
+            font-size: 14px;
+            font-weight: 500;
+            padding: .5rem 2rem;
+            display: block;
+            width: 100%;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              background: lighten($color-main, 20);
+              color: $color-white;
+              text-decoration: none;
+              transition: all .3s ease-in-out;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  /* EVENT */
+  .event {
+    position: relative;
+
+    background: url('../img/event-bg@2x.jpg') top / cover;
+
+    .containerish {
+      display: grid;
+
+      .col-left {
+        height: 300px;
+        background: url('../img/event-img@2x.jpg') center / cover;
+      }
+
+      .col-right {
+        height: auto;
+        background: $color-white;
+        padding: 40px 20px;
+
+        .section-info {}
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* BODY SECTION */
+/* -------------------------------------------------------------------------- */
+.body {
+  background: url('../img/body-bg@2x.jpg') center / cover;
+  position: relative;
+  height: auto;
+
+  .containerish {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .section-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+
+      .section-info {
+        height: 500px;
+        background: $color-white;
+        grid-column: 1 / -1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 2rem;
+
+        .top-left-angle {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      .treatment-menu {
+        display: none;
+      }
+
+      .info-links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .info-link {
+          background: $color-white;
+          color: $color-main;
+          font-family: $font-primary;
+          font-size: 14px;
+          font-weight: 500;
+          padding: .5rem 2rem;
+          display: block;
+          width: 100%;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            background: lighten($color-main, 20);
+            color: $color-white;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+          }
+        }
+
+        .info-link-inverted {
+          background: $color-main;
+          color: $color-white;
+          font-family: $font-primary;
+          font-size: 14px;
+          font-weight: 500;
+          padding: .5rem 2rem;
+          display: block;
+          width: 100%;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            background: lighten($color-main, 20);
+            color: $color-white;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* BIO SECTION */
+/* -------------------------------------------------------------------------- */
+.bio {
+  .containerish {
+    display: grid;
+    grid-gap: 1rem;
+
+    .col-right {
+      .section-info {
+        padding: 40px 20px;
+
+        .siggy {
+          width: 312.35px;
+          height: 107.51px;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXPERIENCE & SHOP SECTION */
+/* -------------------------------------------------------------------------- */
+.experience-shop {
+  position: relative;
+
+  .diagonal-ur-ll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .75;
+    z-index: -1;
+  }
+
+  /* EXPERIENCE */
+  .experience {
+
+    .containerish {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .section-info {
+        padding: 40px 20px;
+        text-align: center;
+
+        p {
+          text-align: justify;
+          max-width: 860px;
+          margin: 0 auto;
+        }
+      }
+
+      .exp-img-2 {
+        max-width: 860px;
+        margin: 0 auto !important;
+      }
+    }
+  }
+
+  /* SHOP */
+  .shop {
+    .containerish {
+      background: url('../img/shopping-img@2x.jpg') center / cover;
+      padding: 1rem;
+
+      .section-info {
+        background: $color-white;
+        position: relative;
+        padding: 40px 20px;
+        text-align: center;
+
+        .top-right-angle {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* NEWSLETTER SECTION */
+/* -------------------------------------------------------------------------- */
+.newsletter {
+  padding: 4rem 0;
+
+  .newsletter-dark {
+    height: auto;
+    position: relative;
+    background: $color-dark;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+
+    .top-left-angle {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 25px;
+      width: 25px;
+    }
+
+    .containerish {
+      padding: 0 20px;
+      display: grid;
+
+      form {
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        input {
+          display: inline-block;
+          width: 100%;
+          height: 50px;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* APPOINTMENTS SECTION */
+/* -------------------------------------------------------------------------- */
+.appointments {
+  min-height: 200px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .appointment-wrapper {
+    flex: 1;
+    padding: 0 1rem 1rem 1rem;
+    max-width: 865px;
+    display: grid;
+
+    .form-copy {
+      text-align: center;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    input:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
