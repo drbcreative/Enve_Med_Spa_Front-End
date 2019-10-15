@@ -427,7 +427,7 @@
 		"oAP": "/img/tempsure-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/tempsure-bg@2x.jpg": {
@@ -438,7 +438,7 @@
 		"oAP": "/img/tempsure-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/tempsure-img.jpg": {

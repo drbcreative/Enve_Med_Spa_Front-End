@@ -38,6 +38,11 @@
           color: $color-light-accent;
           text-decoration: none;
         }
+
+        @media screen and (min-width: 1400px) {
+          margin-right: 1rem;
+          ;
+        }
       }
 
       .topbar-link:last-child {

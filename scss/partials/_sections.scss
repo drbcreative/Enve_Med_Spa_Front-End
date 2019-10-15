@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 .containerish {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   height: auto;
   padding: 0;
 }
@@ -14,13 +14,19 @@
     0 0 8px rgba($color-dark, 0.6);
 }
 
+.header-accent {
+  height: 3px;
+  width: 35px;
+  background: $color-main;
+  margin-bottom: 1rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .hero {
   background: url('../../img/hero@2x.jpg') center / cover;
-  height: calc(100vh - 35px);
-  max-height: 800px;
+  min-height: calc(100vh - 35px);
 
   .header {
 
@@ -73,10 +79,7 @@
   /* HERO CTA */
   .hero-cta {
     margin-top: 1rem;
-    background: url('../img/hero-bg@2x.jpg') center / cover;
     padding: 40px 20px 20px 20px;
-    height: 75vh;
-    max-height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -95,346 +98,78 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/* FACE & EVENT SECTION */
+/* TEMPSURE - EVENT SECTION */
 /* -------------------------------------------------------------------------- */
-.face-event {
+.tempsure-event {
+  background: url('../../img/tempsure-bg@2x.jpg') center / cover;
+  // padding: 40px 20px;
   position: relative;
-  overflow: hidden;
 
-  /* FACE */
-  .face {
-    background: $color-dark;
+  .event-wrapper {
     position: relative;
-
-    .containerish {
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: 1fr;
-
-      .section-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 1rem;
-
-        .section-info {
-          height: 500px;
-          background: $color-white;
-          grid-column: 1 / -1;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 4rem 2rem;
-
-          .top-right-angle {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            height: 25px;
-            width: 25px;
-          }
-        }
-
-        .treatment-menu {
-          display: none;
-        }
-
-        .info-links {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-
-          .info-link {
-            background: $color-white;
-            color: $color-main;
-            font-family: $font-primary;
-            font-size: 14px;
-            font-weight: 500;
-            padding: .5rem 2rem;
-            display: block;
-            width: 100%;
-            transition: all .3s ease-in-out;
-
-            &:hover {
-              background: lighten($color-main, 20);
-              color: $color-white;
-              text-decoration: none;
-              transition: all .3s ease-in-out;
-            }
-          }
-
-          .info-link-inverted {
-            background: $color-main;
-            color: $color-white;
-            font-family: $font-primary;
-            font-size: 14px;
-            font-weight: 500;
-            padding: .5rem 2rem;
-            display: block;
-            width: 100%;
-            transition: all .3s ease-in-out;
-
-            &:hover {
-              background: lighten($color-main, 20);
-              color: $color-white;
-              text-decoration: none;
-              transition: all .3s ease-in-out;
-            }
-          }
-        }
-      }
-
-    }
-  }
-
-  /* EVENT */
-  .event {
-    position: relative;
-
-    background: url('../img/event-bg@2x.jpg') top / cover;
-
-    .containerish {
-      display: grid;
-
-      .col-left {
-        height: 300px;
-        background: url('../img/event-img@2x.jpg') center / cover;
-      }
-
-      .col-right {
-        height: auto;
-        background: $color-white;
-        padding: 40px 20px;
-
-        .section-info {}
-      }
-    }
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-/* BODY SECTION */
-/* -------------------------------------------------------------------------- */
-.body {
-  background: url('../img/body-bg@2x.jpg') center / cover;
-  position: relative;
-  height: auto;
-
-  .containerish {
-    padding: 40px 20px;
     display: grid;
-    grid-template-columns: 1fr;
 
-    .section-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-gap: 1rem;
+    .event-left {
+      background: #E1ECF4;
+      padding: 2rem 1rem;
+      text-align: center;
 
-      .section-info {
-        height: 500px;
-        background: $color-white;
-        grid-column: 1 / -1;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4rem 2rem;
-
-        .top-left-angle {
-          position: absolute;
-          top: 5px;
-          left: 5px;
-          height: 25px;
-          width: 25px;
-        }
+      h4 {
+        letter-spacing: .1rem;
       }
 
-      .treatment-menu {
-        display: none;
+      .event-subtitle {
+        font-family: $font-primary;
+        size: 14px;
+        font-style: italic;
+        letter-spacing: .1rem;
       }
 
-      .info-links {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+      .event-copy {
+        font-family: $font-primary;
+        size: 14px;
+        font-weight: 300;
+        letter-spacing: .1rem;
+      }
 
-        .info-link {
-          background: $color-white;
-          color: $color-main;
-          font-family: $font-primary;
-          font-size: 14px;
-          font-weight: 500;
-          padding: .5rem 2rem;
-          display: block;
-          width: 100%;
+      .event-rsvp {
+        background: transparent;
+        border: 1px solid $color-dark;
+        color: $color-dark;
+        padding: .5rem 2rem;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          background: $color-dark;
+          color: $color-light;
           transition: all .3s ease-in-out;
-
-          &:hover {
-            background: lighten($color-main, 20);
-            color: $color-white;
-            text-decoration: none;
-            transition: all .3s ease-in-out;
-          }
-        }
-
-        .info-link-inverted {
-          background: $color-main;
-          color: $color-white;
-          font-family: $font-primary;
-          font-size: 14px;
-          font-weight: 500;
-          padding: .5rem 2rem;
-          display: block;
-          width: 100%;
-          transition: all .3s ease-in-out;
-
-          &:hover {
-            background: lighten($color-main, 20);
-            color: $color-white;
-            text-decoration: none;
-            transition: all .3s ease-in-out;
-          }
+          text-decoration: none;
         }
       }
     }
 
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-/* BIO SECTION */
-/* -------------------------------------------------------------------------- */
-.bio {
-  .containerish {
-    display: grid;
-    grid-gap: 1rem;
-
-    .col-right {
-      .section-info {
-        padding: 40px 20px;
-
-        .siggy {
-          width: 312.35px;
-          height: 107.51px;
-        }
-      }
+    .event-right {
+      background: url('../../img/event-img@2x.jpg') top / cover;
+      height: 200px;
     }
   }
-}
 
-/* -------------------------------------------------------------------------- */
-/* EXPERIENCE & SHOP SECTION */
-/* -------------------------------------------------------------------------- */
-.experience-shop {
-  position: relative;
-
-  .diagonal-ur-ll {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: .75;
-    z-index: -1;
-  }
-
-  /* EXPERIENCE */
-  .experience {
+  .tempsure {
+    margin-top: 2rem;
 
     .containerish {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .section-info {
-        padding: 40px 20px;
-        text-align: center;
-
-        p {
-          text-align: justify;
-          max-width: 860px;
-          margin: 0 auto;
-        }
-      }
-
-      .exp-img-2 {
-        max-width: 860px;
-        margin: 0 auto !important;
-      }
-    }
-  }
-
-  /* SHOP */
-  .shop {
-    .containerish {
-      background: url('../img/shopping-img@2x.jpg') center / cover;
-      padding: 1rem;
-
-      .section-info {
-        background: $color-white;
-        position: relative;
-        padding: 40px 20px;
-        text-align: center;
-
-        .top-right-angle {
-          position: absolute;
-          top: 5px;
-          right: 5px;
-          height: 25px;
-          width: 25px;
-        }
-      }
-    }
-  }
-}
-
-
-/* -------------------------------------------------------------------------- */
-/* NEWSLETTER SECTION */
-/* -------------------------------------------------------------------------- */
-.newsletter {
-  padding: 4rem 0;
-
-  .newsletter-dark {
-    height: auto;
-    position: relative;
-    background: $color-dark;
-    display: flex;
-    align-items: center;
-    padding: 3rem 0;
-
-    .top-left-angle {
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      height: 25px;
-      width: 25px;
-    }
-
-    .containerish {
-      padding: 0 20px;
       display: grid;
+      background: $color-white;
+      row-gap: 1rem;
 
-      form {
-        p {
-          font-size: 16px;
-          line-height: 24px;
-        }
-
-        input {
-          display: inline-block;
-          width: 100%;
-          height: 50px;
-          padding-left: 1rem;
-        }
+      .section-info {
+        padding: 20px;
       }
     }
   }
 }
+
+
 
 /* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */

@@ -93,9 +93,9 @@
   color: $color-white;
 
   &:hover {
-    color: $color-main;
-    background-color: darken(#fff, 15);
-    border: 1px solid darken(#fff, 15);
+    color: $color-dark;
+    background-color: $color-main !important;
+    border: 1px solid $color-dark;
     text-decoration: none;
   }
 }
