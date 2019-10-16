@@ -105,3 +105,19 @@ submenuClose.addEventListener('click', () => {
   subMenu.classList.remove('menu-drop');
   subMenu.classList.add('menu-up');
 });
+
+
+/* Menu Background & Scroll Top */
+const scrollUp = document.querySelector('.scroll-top');
+
+window.addEventListener('scroll', () => {
+  if (window.innerWidth >= 992 && window.scrollY > 50) {
+    scrollUp.classList.add('show');
+  } else if (window.innerWidth >= 992 && window.scrollY < 100) {
+    scrollUp.classList.remove('show');
+  } else if (window.scrollY > 100) {
+    scrollUp.classList.add('show');
+  } else if (window.scrollY < 100) {
+    scrollUp.classList.remove('show');
+  }
+});

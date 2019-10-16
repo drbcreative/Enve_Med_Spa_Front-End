@@ -44,18 +44,19 @@
       width: 100%;
 
       .menu-link {
-        font-family: $font-primary;
+        font-family: $font-secondary;
         color: $color-white;
         font-size: 20px;
+        font-weight: 400;
         line-height: calc(25px * 2);
         display: block;
         width: 100%;
         transition: all .3s ease-out;
 
         &:hover {
-          // background: rgba($color-white, .16);
+          background: rgba($color-white, .16);
           text-decoration: none;
-          color: $color-light-accent;
+          // color: $color-light-accent;
           transition: all .3s ease-out;
         }
       }
