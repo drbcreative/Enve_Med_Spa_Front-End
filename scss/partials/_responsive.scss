@@ -140,11 +140,45 @@
     }
   }
 
+  /* PERMANENT MAKEUP ******************************************************* */
+  .permanent-makeup {
+    background: url('../../img/permanent-makeup-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+    display: flex;
+    align-items: flex-start;
 
-  /* APPOINTMENTS */
-  .appointments {
-    padding: 0 20px 4rem 20px;
+    .containerish {
+      .section-info {
+        width: 50%;
+        max-width: 600px;
+      }
+    }
   }
+
+  /* APPOINTMENT ************************************************************ */
+  .appointments {
+    padding: 80px 20px;
+
+    .containerish {
+      position: relative;
+
+      .section-header-sun {
+        position: absolute;
+        height: 160px;
+        width: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .section-info {
+        text-align: center;
+        padding-top: 3.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -355,42 +389,24 @@
     }
   }
 
+  /* PERMANENT MAKEUP ******************************************************* */
+  .permanent-makeup {
+    padding: 40px 20px;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
 
-  /* REQUEST APPOINTMENT */
-  .appointments {
-    padding: 0 20px 4rem 20px;
+    .containerish {
+      .section-info {
+        width: 80%;
+        max-width: 650px;
 
-    .appointment-wrapper {
-      padding: 1rem 8%;
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2rem;
-      grid-row-gap: 1rem;
-
-      .form-copy {
-        grid-row: 1;
-        grid-column: 1 / -1;
-        justify-self: center;
-        text-align: center;
-      }
-
-      .form-control {
-        border-radius: 0;
-      }
-
-      input:not(:last-child) {
-        margin-bottom: 0.5rem;
-      }
-
-      button {
-        grid-row: 5;
-        grid-column: 1 / -1 !important;
-        justify-self: center;
+        p {
+          max-width: 460px;
+        }
       }
     }
   }
-
 
 }
 
@@ -398,6 +414,12 @@
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    min-width: 220px;
+  }
 
   /* HERO ******************************************************************* */
   .hero {
@@ -520,6 +542,27 @@
             height: 100%;
             width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  /* PERMANENT MAKEUP ******************************************************* */
+  .permanent-makeup {
+    padding: 40px 20px;
+    height: 865px;
+    display: flex;
+    align-items: flex-start;
+
+    .containerish {
+      margin-top: 6rem;
+
+      .section-info {
+        width: 100%;
+        max-width: 650px;
+
+        p {
+          max-width: 460px;
         }
       }
     }
@@ -761,14 +804,14 @@
         .section-info {
           grid-column: 2;
           grid-row: 1;
-          padding: 4rem;
+          padding: 1rem;
         }
 
         .section-img {
           grid-column: 1;
           grid-row: 1;
           position: relative;
-          top: -30px;
+          top: -50px;
           left: -30px;
         }
 
@@ -779,6 +822,27 @@
           position: absolute;
           left: -50px;
           bottom: -120px;
+        }
+      }
+    }
+  }
+
+  /* PERMANENT MAKEUP ******************************************************* */
+  .permanent-makeup {
+    padding: 40px 20px;
+    height: 865px;
+    display: flex;
+    align-items: flex-start;
+
+    .containerish {
+      margin-top: 6rem;
+
+      .section-info {
+        width: 100%;
+        max-width: 750px;
+
+        p {
+          max-width: 460px;
         }
       }
     }

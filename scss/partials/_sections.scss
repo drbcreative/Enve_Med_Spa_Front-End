@@ -293,31 +293,41 @@
 }
 
 /* -------------------------------------------------------------------------- */
+/* PERMANENT MAKEUP SECTION */
+/* -------------------------------------------------------------------------- */
+.permanent-makeup {
+  background: url('../../img/permanent-makeup-bg@2x.jpg') left / cover;
+  padding: 40px 20px;
+  display: flex;
+  align-items: flex-start;
+
+  .containerish {
+    .section-info {
+      max-width: 600px;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
 /* -------------------------------------------------------------------------- */
 .appointments {
-  min-height: 200px;
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 40px 20px;
 
-  .appointment-wrapper {
-    flex: 1;
-    padding: 0 1rem 1rem 1rem;
-    max-width: 865px;
-    display: grid;
+  .containerish {
+    position: relative;
 
-    .form-copy {
+    .section-header-sun {
+      position: absolute;
+      height: 160px;
+      width: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .section-info {
       text-align: center;
-    }
-
-    .form-control {
-      border-radius: 0;
-    }
-
-    input:not(:last-child) {
-      margin-bottom: 0.5rem;
+      padding-top: 3.5rem;
     }
   }
 }
