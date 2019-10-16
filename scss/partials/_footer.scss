@@ -3,59 +3,77 @@
 /* -------------------------------------------------------------------------- */
 
 /* FOOTER 1 */
-.footer-1 {
-  background: url('../img/footer-img@2x.jpg') center / cover;
-  min-height: 200px;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
+.footer1 {
+  background: url('../img/footer-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
 
-  .footer-content {
-    background: $color-white;
-    position: relative;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
+  .containerish {
+    .section-info {
+      text-align: center;
 
-    p {
-      font-size: 16px;
-      line-height: calc(16px * 1.618);
-      font-weight: 300;
+      .footer-logo {
+        width: 257.81px;
+        height: 99.83;
+      }
     }
 
-    .footer-logo {
-      width: 202.4px;
-      height: 100.02px;
+    .section-map {
+      position: relative;
       margin-bottom: 2rem;
+
+      .blue-box {
+        display: none;
+        position: absolute;
+        height: 220px;
+        width: 220px;
+      }
     }
 
-    .map {
-      max-width: 492px;
-      height: 150px;
+    .section-newsletter {
+      text-align: center;
+
+      form {
+        margin-top: 1rem;
+        display: grid;
+        row-gap: .5rem;
+
+        .form-control {
+          border-radius: 0;
+        }
+      }
     }
 
-    .line {
-      height: 1px !important;
+    .footer-nav {
+      margin-top: 2rem;
       width: 100%;
-      max-width: 492px;
-      background: $color-main;
-      margin: 2rem 0;
-      opacity: .5;
-    }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    .ig {
-      max-width: 445px;
-      max-height: 377px;
+      .footer-nav-link {
+        font-family: $font-primary;
+        size: 13px;
+        font-weight: 500;
+        color: $color-white;
+        margin-bottom: 1rem;
+
+        &:hover {
+          color: $color-light-accent;
+          text-decoration: none;
+        }
+      }
+
+      .footer-nav-link:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 /* FOOTER 2 */
 .footer2 {
-  background-color: $color-dark;
+  background-color: $color-white;
   width: 100%;
   // padding: 0.6rem 30px;
   height: 50px;
@@ -66,7 +84,7 @@
     font-family: $font-primary;
     font-size: 14px;
     font-weight: 300;
-    color: $color-white;
+    color: $color-dark;
     padding: 0;
     margin: 0;
   }

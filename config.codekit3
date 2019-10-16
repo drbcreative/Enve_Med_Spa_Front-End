@@ -263,6 +263,28 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/map.jpg": {
+		"ft": 16384,
+		"iS": 12016,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/map@2x.jpg": {
+		"ft": 16384,
+		"iS": 40431,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/mens-health-img.jpg": {
 		"ft": 16384,
 		"iS": 65329,
@@ -841,12 +863,12 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/video/AdobeStock_81327584_Video_HD_Preview.mov": {
+	"/video/flyover.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/video/AdobeStock_81327584_Video_HD_Preview.mov",
+		"oAP": "/video/flyover.mp4",
 		"oF": 0
 		}
 	},

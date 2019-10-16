@@ -25,11 +25,23 @@
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .hero {
-  background: url('../../img/hero@2x.jpg') center / cover;
+  background: url('../img/hero@2x.jpg') center / cover;
   min-height: calc(100vh - 35px);
   background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+
+  .bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
   .header {
+    position: relative;
+    width: 100%;
 
     .containerish {
       display: grid;
@@ -102,7 +114,7 @@
 /* TEMPSURE - EVENT SECTION */
 /* -------------------------------------------------------------------------- */
 .tempsure-event {
-  background: url('../../img/tempsure-bg@2x.jpg') center / cover;
+  background: url('../img/tempsure-bg@2x.jpg') center / cover;
   // padding: 40px 20px;
   position: relative;
 
@@ -150,7 +162,7 @@
     }
 
     .event-right {
-      background: url('../../img/event-img@2x.jpg') top / cover;
+      background: url('../img/event-img@2x.jpg') top / cover;
       height: 200px;
     }
   }
@@ -177,7 +189,7 @@
   position: relative;
 
   .sculpsure-img {
-    background: url('../../img/sculpsure-img@2x.jpg') center / cover;
+    background: url('../img/sculpsure-img@2x.jpg') center / cover;
     height: 300px;
   }
 
@@ -218,7 +230,7 @@
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
 .botox-fillers {
-  background: url('../../img/botox-fillers-bg@2x.jpg') center / cover;
+  background: url('../img/botox-fillers-bg@2x.jpg') center / cover;
   min-height: 400px;
 
   .containerish {
@@ -250,7 +262,7 @@
 /* MENS AND WOMENS HEALTH SECTION */
 /* -------------------------------------------------------------------------- */
 .mens-womens-health {
-  background: url('../../img/mens-womans-health-bg@2x.jpg') top left / cover;
+  background: url('../img/mens-womans-health-bg@2x.jpg') top left / cover;
   min-height: 500px;
 
   /* mens health */
@@ -296,7 +308,7 @@
 /* PERMANENT MAKEUP SECTION */
 /* -------------------------------------------------------------------------- */
 .permanent-makeup {
-  background: url('../../img/permanent-makeup-bg@2x.jpg') left / cover;
+  background: url('../img/permanent-makeup-bg@2x.jpg') left / cover;
   padding: 40px 20px;
   display: flex;
   align-items: flex-start;

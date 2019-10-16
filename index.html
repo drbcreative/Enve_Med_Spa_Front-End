@@ -8,8 +8,6 @@
   <title>ENVE</title>
 
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="slick/slick.css" />
-  <link rel="stylesheet" href="slick/slick-theme.css" /> -->
   <link rel="stylesheet" href="css/vendor/animate.min.css" />
   <link rel="stylesheet" href="css/vendor/db-animate.min.css" />
   <link rel="stylesheet" href="css/theme.min.css" />
@@ -161,6 +159,9 @@
 
   <!-- hero -->
   <section class="hero">
+    <video loop muted autoplay poster="img/hero@2x.jpg" class="bg__video d-none d-md-block">
+      <source src="video/flyover.mp4" type="video/mp4">
+    </video>
     <div class="header">
       <div class="containerish">
         <div class="col-left">
@@ -219,7 +220,7 @@
     <div class="tempsure">
       <div class="containerish">
         <img src="img/tempsure-img@2x.jpg" alt="" class="section-img">
-        <div class="section-info">
+        <div class="section-info fade-in">
           <div class="header-accent"></div>
           <h2 class="color-dark">TEMPSURE</h2>
           <p class="body-copy color-dark mt-3 mb-5">
@@ -243,7 +244,7 @@
   <section class="sculpsure">
     <div class="sculpsure-img"></div>
     <div class="sculpsure-content">
-      <div class="containerish">
+      <div class="containerish fade-in">
         <div class="section-info">
           <img src="img/appointment-sun.svg" alt="" class="section-header-sun">
           <div class="header-accent"></div>
@@ -273,7 +274,7 @@
           <img src="img/blue-box.svg" alt="" class="blue-box d-none d-xl-block">
           <img src="img/botox-img@2x.jpg" alt="" class="section-img">
         </div>
-        <div class="section-info">
+        <div class="section-info fade-in-left">
           <div class="header-accent"></div>
           <h2 class="color-white">BOTOX</h2>
           <p class="body-copy color-white mt-3 mb-4">
@@ -294,7 +295,7 @@
           <img src="img/blue-box.svg" alt="" class="blue-box d-none d-xl-block">
           <img src="img/fillers-img@2x.jpg" alt="" class="section-img">
         </div>
-        <div class="section-info">
+        <div class="section-info fade-in-right">
           <div class="header-accent"></div>
           <h2 class="color-white">FILLERS</h2>
           <p class="body-copy color-white mt-3 mb-4">
@@ -321,7 +322,7 @@
       <div class="containerish">
         <img src="img/mens-health-img@2x.jpg" alt="" class="section-img">
         <img src="img/menshealth-img-2@2x.jpg" alt="" class="section-img2">
-        <div class="section-info">
+        <div class="section-info fade-in">
           <div class="header-accent"></div>
           <h2 class="color-dark">MEN’S HEALTH</h2>
           <p class="body-copy color-dark mt-3 mb-5">
@@ -345,7 +346,7 @@
       <div class="containerish">
         <img src="img/womens-health-img@2x.jpg" alt="" class="section-img">
         <img src="img/womenshealth-img-2@2x.jpg" alt="" class="section-img2">
-        <div class="section-info">
+        <div class="section-info fade-in">
           <div class="header-accent"></div>
           <h2 class="color-dark">WOMEN’S HEALTH</h2>
           <p class="body-copy color-dark mt-3 mb-5">
@@ -369,7 +370,7 @@
   <!-- permanent makeup -->
   <section class="permanent-makeup">
     <div class="containerish">
-      <div class="section-info">
+      <div class="section-info fade-in-right">
         <div class="header-accent"></div>
         <h2 class="color-dark">PERMANENT MAKEUP</h2>
         <p class="body-copy color-dark mt-3 mb-4">
@@ -408,32 +409,72 @@
 
   <!-- ---------- Footer ---------- -->
 
-  <!-- footer 1 -->
-
-  <!-- /footer 1 -->
-
-  <!-- footer 2 -->
-  <section class="footer2">
-    <div class="containerish">
-
-      <div class="foot-middle">
-        <p class="footer-2-copy text-center">
-          JTAV Clinical Skincare | <a href="#" class="footer-2-link">Website by Urge Interactive</a>
-        </p>
+  <footer>
+    <!-- footer 1 -->
+    <section class="footer1">
+      <div class="containerish">
+        <div class="section-info">
+          <img src="img/logo.svg" alt="" class="footer-logo">
+          <p class="body-copy color-white mt-3 mb-4">
+            1733 N. Palm Canyon Drive <br>
+            Monday- Thursday: 10am-7pm; <br class="d-block d-md-none">Friday: 11am-6pm<br>
+            (555) 555-5555
+          </p>
+        </div>
+        <div class="section-map">
+          <img src="img/blue-box.svg" alt="" class="blue-box">
+          <img src="img/map@2x.jpg" alt="" class="map">
+        </div>
+        <div class="section-newsletter">
+          <h3 class="color-white mb-4">SIGN UP FOR OUR NEWSLETTER</h3>
+          <form action="#">
+            <input type="text" class="form-control" name="name" placeholder="Full Name">
+            <input type="email" class="form-control" name="email" placeholder="Email">
+            <button class="ui-btn ui-btn-white-ol form-control" type="submit">SUBMIT</a>
+          </form>
+        </div>
+        <div class="footer-nav">
+          <a href="#" class="footer-nav-link">ABOUT US</a>
+          <a href="#" class="footer-nav-link">SERVICES</a>
+          <a href="#" class="footer-nav-link">PATIENT PORTAL</a>
+          <a href="#" class="footer-nav-link">CONCERNS / CONDITIONS</a>
+          <a href="#" class="footer-nav-link">PROMOTIONS</a>
+          <a href="#" class="footer-nav-link">EVENTS</a>
+          <a href="#" class="footer-nav-link">BLOG</a>
+          <a href="#" class="footer-nav-link">BOOK NOW</a>
+        </div>
       </div>
+    </section>
+    <!-- /footer 1 -->
 
-    </div>
-  </section>
-  <!-- /footer 2 -->
+    <!-- footer 2 -->
+    <section class="footer2">
+      <div class="containerish">
+        <div class="foot-left d-none d-xl-block">
+          <a href="#" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="foot-middle">
+          <p class="footer-2-copy text-center">
+            ENVÉ CALIFORNIA AESTHETICS | <a href="#" class="footer-2-link">Website by Urge Interactive</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- /footer 2 -->
+  </footer>
 
   <!-- ---------- /Footer ---------- -->
 
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/bootstrap.bundle.min.js"></script>
-  <!-- <script src="slick/slick.min.js"></script> -->
   <script src="js/app.js"></script>
-  <script src="js/vendor/db-animate2-min.js"></script>
-  <!-- <script src="js/slider-init.min.js"></script> -->
+  <script src="js/vendor/db-animate2.min.js"></script>
 </body>
 
 </html>
