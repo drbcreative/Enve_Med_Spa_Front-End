@@ -25,6 +25,14 @@
 		"oAP": "/assets/enve_v4.xd",
 		"oF": 0
 		},
+	"/assets/enve_v5.xd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/enve_v5.xd",
+		"oF": 0
+		},
 	"/assets/FONT LIST.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -277,6 +285,39 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/mens-womans-health-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 301520,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/mens-womans-health-bg@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/menshealth-img-2.jpg": {
+		"ft": 16384,
+		"iS": 20446,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/menshealth-img-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/menshealth-img-2@2x.jpg": {
+		"ft": 16384,
+		"iS": 65172,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/menshealth-img-2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/menu-burger.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -326,28 +367,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/menu-right-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/menus-womans-health-bg.jpg": {
-		"ft": 16384,
-		"iS": 118792,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/menus-womans-health-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/menus-womans-health-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 380237,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/menus-womans-health-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -480,6 +499,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/womens-health-img@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/womenshealth-img-2.jpg": {
+		"ft": 16384,
+		"iS": 20365,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/womenshealth-img-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/womenshealth-img-2@2x.jpg": {
+		"ft": 16384,
+		"iS": 70137,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/womenshealth-img-2@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

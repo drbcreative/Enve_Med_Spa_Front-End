@@ -220,6 +220,76 @@
 .botox-fillers {
   background: url('../../img/botox-fillers-bg@2x.jpg') center / cover;
   min-height: 400px;
+
+  .containerish {
+    display: grid;
+    row-gap: 1rem;
+
+    .col-left,
+    .col-right {
+      .section-info {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        h2,
+        .header-accent {
+          align-self: center;
+        }
+      }
+
+      .section-img-wrapper {
+        position: relative;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* MENS AND WOMENS HEALTH SECTION */
+/* -------------------------------------------------------------------------- */
+.mens-womens-health {
+  background: url('../../img/mens-womans-health-bg@2x.jpg') top left / cover;
+  min-height: 500px;
+
+  /* mens health */
+  .menshealth {
+    margin-top: 2rem;
+
+    .containerish {
+      display: grid;
+      background: $color-white;
+      row-gap: 1rem;
+
+      .section-img2 {
+        display: none;
+      }
+
+      .section-info {
+        padding: 20px;
+      }
+    }
+  }
+
+  /* womens health */
+  .womenshealth {
+    margin-top: 2rem;
+
+    .containerish {
+      display: grid;
+      background: $color-white;
+      row-gap: 1rem;
+
+      .section-img2 {
+        display: none;
+      }
+
+      .section-info {
+        padding: 20px;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */

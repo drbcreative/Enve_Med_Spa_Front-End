@@ -101,6 +101,45 @@
     }
   }
 
+  /* MENS - WOMENS HEALTH *************************************************** */
+  .mens-womens-health {
+    padding: 60px 0;
+
+    /* mens health */
+    .menshealth {
+      margin-top: 2rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 75%;
+        justify-content: center;
+        background: $color-white;
+        row-gap: 1rem;
+
+        .section-info {
+          padding: 20px;
+        }
+      }
+    }
+
+    /* womens health */
+    .womenshealth {
+      margin-top: 2rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 75%;
+        justify-content: center;
+        background: $color-white;
+        row-gap: 1rem;
+
+        .section-info {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
 
   /* APPOINTMENTS */
   .appointments {
@@ -233,6 +272,90 @@
     }
   }
 
+  /* BOTOX - FILLERS ******************************************************** */
+  .botox-fillers {
+    padding: 40px 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 0;
+      grid-gap: 2rem;
+
+      .col-left,
+      .col-right {
+        .section-info {
+          padding: 40px 0;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          h2,
+          .header-accent {
+            align-self: center;
+          }
+        }
+
+        .section-img-wrapper {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  /* MENS - WOMENS HEALTH *************************************************** */
+  .mens-womens-health {
+    padding: 60px 0;
+
+    /* mens health */
+    .menshealth {
+      margin-top: 4rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        background: $color-white;
+        row-gap: 0;
+        column-gap: 2rem;
+        box-shadow: 0 0 6px rgba($color-black, .05);
+
+        .section-info {
+          padding: 20px;
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+        .section-img {
+          grid-column: 2;
+          grid-row: 1;
+        }
+      }
+    }
+
+    /* womens health */
+    .womenshealth {
+      margin-top: 4rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        background: $color-white;
+        row-gap: 0;
+        column-gap: 2rem;
+        box-shadow: 0 0 6px rgba($color-black, .05);
+
+        .section-info {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+
   /* REQUEST APPOINTMENT */
   .appointments {
     padding: 0 20px 4rem 20px;
@@ -333,6 +456,74 @@
     }
   }
 
+  /* BOTOX - FILLERS ******************************************************** */
+  .botox-fillers {
+    padding: 4rem 20px;
+
+    .containerish {
+      grid-gap: 2rem;
+
+      .col-left,
+      .col-right {
+        .section-info {
+          padding: 40px 0;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          h2,
+          .header-accent {
+            align-self: center;
+          }
+        }
+      }
+
+      .col-left {
+        .section-img-wrapper {
+          position: relative;
+          width: 556px;
+          height: 271px;
+
+          .blue-box {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            top: -10px;
+          }
+
+          .section-img {
+            position: absolute;
+            z-index: 5;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .col-right {
+        .section-img-wrapper {
+          position: relative;
+          width: 556px;
+          height: 271px;
+
+          .blue-box {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            bottom: -10px;
+            right: 0;
+          }
+
+          .section-img {
+            position: absolute;
+            z-index: 5;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -473,6 +664,121 @@
             max-width: 900px;
             align-self: center;
           }
+        }
+      }
+    }
+  }
+
+  /* BOTOX - FILLERS ******************************************************** */
+  .botox-fillers {
+    padding: 26rem 0 4rem 0;
+
+    .containerish {
+      grid-gap: 2rem;
+
+      .col-left {
+        .section-img-wrapper {
+
+          .blue-box {
+            top: -10px;
+            left: -10px;
+          }
+        }
+      }
+
+      .col-right {
+        .section-img-wrapper {
+
+          .blue-box {
+            bottom: 4px;
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  .mens-womens-health {
+    padding: 100px 0 18rem 0;
+
+    /* mens health */
+    .menshealth {
+      margin-top: 4rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        background: $color-white;
+        row-gap: 0;
+        column-gap: 2rem;
+        box-shadow: 0 0 6px rgba($color-black, .05);
+        position: relative;
+        height: 600px;
+
+        .section-info {
+          grid-column: 1;
+          grid-row: 1;
+          padding: 4rem;
+        }
+
+        .section-img {
+          grid-column: 2;
+          grid-row: 1;
+          position: relative;
+          top: -30px;
+          right: -30px;
+        }
+
+        .section-img2 {
+          display: block;
+          height: 304px;
+          width: 336px;
+          position: absolute;
+          right: -50px;
+          bottom: -120px;
+        }
+      }
+    }
+
+    /* womens health */
+    .womenshealth {
+      margin-top: 20rem;
+
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        background: $color-white;
+        row-gap: 0;
+        column-gap: 2rem;
+        box-shadow: 0 0 6px rgba($color-black, .05);
+        position: relative;
+        height: 600px;
+
+        .section-info {
+          grid-column: 2;
+          grid-row: 1;
+          padding: 4rem;
+        }
+
+        .section-img {
+          grid-column: 1;
+          grid-row: 1;
+          position: relative;
+          top: -30px;
+          left: -30px;
+        }
+
+        .section-img2 {
+          display: block;
+          height: 304px;
+          width: 336px;
+          position: absolute;
+          left: -50px;
+          bottom: -120px;
         }
       }
     }
